@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{810B1146-E48B-471A-AABC-7F07213CDFE7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CardApps.WindowsApp</RootNamespace>
+    <AssemblyName>CardApps.WindowsApp</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlayOrPass.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PlayOrPass.Designer.cs">
+      <DependentUpon>PlayOrPass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Settings.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlayOrPass.resx">
+      <DependentUpon>PlayOrPass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\Cards\cardSkin.PNG" />
+    <Content Include="Images\Cards\cl1.gif" />
+    <Content Include="Images\Cards\cl10.gif" />
+    <Content Include="Images\Cards\cl2.gif" />
+    <Content Include="Images\Cards\cl3.gif" />
+    <Content Include="Images\Cards\cl4.gif" />
+    <Content Include="Images\Cards\cl5.gif" />
+    <Content Include="Images\Cards\cl6.gif" />
+    <Content Include="Images\Cards\cl7.gif" />
+    <Content Include="Images\Cards\cl8.gif" />
+    <Content Include="Images\Cards\cl9.gif" />
+    <Content Include="Images\Cards\clj.gif" />
+    <Content Include="Images\Cards\clk.gif" />
+    <Content Include="Images\Cards\clq.gif" />
+    <Content Include="Images\Cards\di1.gif" />
+    <Content Include="Images\Cards\di10.gif" />
+    <Content Include="Images\Cards\di2.gif" />
+    <Content Include="Images\Cards\di3.gif" />
+    <Content Include="Images\Cards\di4.gif" />
+    <Content Include="Images\Cards\di5.gif" />
+    <Content Include="Images\Cards\di6.gif" />
+    <Content Include="Images\Cards\di7.gif" />
+    <Content Include="Images\Cards\di8.gif" />
+    <Content Include="Images\Cards\di9.gif" />
+    <Content Include="Images\Cards\dij.gif" />
+    <Content Include="Images\Cards\dik.gif" />
+    <Content Include="Images\Cards\diq.gif" />
+    <Content Include="Images\Cards\he1.gif" />
+    <Content Include="Images\Cards\he10.gif" />
+    <Content Include="Images\Cards\he2.gif" />
+    <Content Include="Images\Cards\he3.gif" />
+    <Content Include="Images\Cards\he4.gif" />
+    <Content Include="Images\Cards\he5.gif" />
+    <Content Include="Images\Cards\he6.gif" />
+    <Content Include="Images\Cards\he7.gif" />
+    <Content Include="Images\Cards\he8.gif" />
+    <Content Include="Images\Cards\he9.gif" />
+    <Content Include="Images\Cards\hej.gif" />
+    <Content Include="Images\Cards\hek.gif" />
+    <Content Include="Images\Cards\heq.gif" />
+    <Content Include="Images\Cards\sp1.gif" />
+    <Content Include="Images\Cards\sp10.gif" />
+    <Content Include="Images\Cards\sp2.gif" />
+    <Content Include="Images\Cards\sp3.gif" />
+    <Content Include="Images\Cards\sp4.gif" />
+    <Content Include="Images\Cards\sp5.gif" />
+    <Content Include="Images\Cards\sp6.gif" />
+    <Content Include="Images\Cards\sp7.gif" />
+    <Content Include="Images\Cards\sp8.gif" />
+    <Content Include="Images\Cards\sp9.gif" />
+    <Content Include="Images\Cards\spj.gif" />
+    <Content Include="Images\Cards\spk.gif" />
+    <Content Include="Images\Cards\spq.gif" />
+    <Content Include="Images\Players\cat.jpg" />
+    <Content Include="Images\Players\dog.jpg" />
+    <Content Include="Images\Players\rubberduck.jpg" />
+    <Content Include="Images\Players\soccerball.jpg" />
+    <Content Include="Resources\backGreen.PNG" />
+    <Content Include="Resources\Background.jpg" />
+    <Content Include="Resources\BorderPlaceYourBetBottom.gif" />
+    <Content Include="Resources\BorderPlaceYourBetTop.gif" />
+    <Content Include="Resources\ButtonRound.gif" />
+    <Content Include="Resources\ButtonRoundRollOver.gif" />
+    <Content Include="Resources\ButtonSquare.gif" />
+    <Content Include="Resources\cardSkin.PNG" />
+    <Content Include="Resources\coin1.gif" />
+    <Content Include="Resources\coin2.gif" />
+    <Content Include="Resources\coin3.gif" />
+    <Content Include="Resources\coin4.gif" />
+    <Content Include="Resources\FrameBlue.gif" />
+    <Content Include="Resources\FrameBrightRed.gif" />
+    <Content Include="Resources\FrameOrange.gif" />
+    <Content Include="Resources\FramePink.gif" />
+    <Content Include="Resources\FrameRed.gif" />
+    <Content Include="Resources\FrameTextField1.gif" />
+    <Content Include="Resources\FrameTextField2.gif" />
+    <Content Include="Resources\FrameTextField3.gif" />
+    <Content Include="Resources\FrameTextField4.gif" />
+    <Content Include="Resources\FrameTextField5.gif" />
+    <Content Include="Resources\PlaceYourBetTextField.gif" />
+    <Content Include="Resources\SplashPage.jpg" />
+    <Content Include="Resources\StartMenuIcon.png" />
+    <Content Include="Resources\TemplateIcon.ico" />
+    <Content Include="Resources\TextFieldTop.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Documentation\Images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CardApps.Common\CardApps.Common.csproj">
+      <Project>{c06a5eed-773a-45d2-bf28-44891723d1f4}</Project>
+      <Name>CardApps.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
