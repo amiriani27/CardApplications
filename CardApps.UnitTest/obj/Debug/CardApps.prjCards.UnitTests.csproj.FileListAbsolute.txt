@@ -1,0 +1,10 @@
+C:\SourceCode\Repos\CardApps.UnitTest\bin\Debug\CardApps.UnitTest.dll
+C:\SourceCode\Repos\CardApps.UnitTest\bin\Debug\CardApps.UnitTest.pdb
+C:\SourceCode\Repos\CardApps.UnitTest\bin\Debug\CardApps.Common.dll
+C:\SourceCode\Repos\CardApps.UnitTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\SourceCode\Repos\CardApps.UnitTest\bin\Debug\CardApps.Common.pdb
+C:\SourceCode\Repos\CardApps.UnitTest\obj\Debug\CardApps.prjCards.UnitTests.csproj.AssemblyReference.cache
+C:\SourceCode\Repos\CardApps.UnitTest\obj\Debug\CardApps.prjCards.UnitTests.csproj.CoreCompileInputs.cache
+C:\SourceCode\Repos\CardApps.UnitTest\obj\Debug\CardApps.prjCards.UnitTests.csproj.CopyComplete
+C:\SourceCode\Repos\CardApps.UnitTest\obj\Debug\CardApps.UnitTest.dll
+C:\SourceCode\Repos\CardApps.UnitTest\obj\Debug\CardApps.UnitTest.pdb

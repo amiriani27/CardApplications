@@ -1,0 +1,6 @@
+C:\SourceCode\Repos\CardApps.Common\bin\Debug\CardApps.Common.dll
+C:\SourceCode\Repos\CardApps.Common\bin\Debug\CardApps.Common.pdb
+C:\SourceCode\Repos\CardApps.Common\obj\Debug\CardApps.Common.csproj.AssemblyReference.cache
+C:\SourceCode\Repos\CardApps.Common\obj\Debug\CardApps.Common.csproj.CoreCompileInputs.cache
+C:\SourceCode\Repos\CardApps.Common\obj\Debug\CardApps.Common.dll
+C:\SourceCode\Repos\CardApps.Common\obj\Debug\CardApps.Common.pdb

@@ -1,0 +1,16 @@
+C:\SourceCode\Repos\CardApps.WindowsApp\bin\Debug\CardApps.WindowsApp.exe.config
+C:\SourceCode\Repos\CardApps.WindowsApp\bin\Debug\CardApps.WindowsApp.exe
+C:\SourceCode\Repos\CardApps.WindowsApp\bin\Debug\CardApps.WindowsApp.pdb
+C:\SourceCode\Repos\CardApps.WindowsApp\bin\Debug\CardApps.Common.dll
+C:\SourceCode\Repos\CardApps.WindowsApp\bin\Debug\CardApps.Common.pdb
+C:\SourceCode\Repos\CardApps.WindowsApp\obj\Debug\CardApps.WindowsApp.csproj.AssemblyReference.cache
+C:\SourceCode\Repos\CardApps.WindowsApp\obj\Debug\CardApps.WindowsApp.csproj.SuggestedBindingRedirects.cache
+C:\SourceCode\Repos\CardApps.WindowsApp\obj\Debug\CardApps.WindowsApp.Form1.resources
+C:\SourceCode\Repos\CardApps.WindowsApp\obj\Debug\CardApps.WindowsApp.Form2.resources
+C:\SourceCode\Repos\CardApps.WindowsApp\obj\Debug\CardApps.WindowsApp.PlayOrPass.resources
+C:\SourceCode\Repos\CardApps.WindowsApp\obj\Debug\CardApps.WindowsApp.Properties.Resources.resources
+C:\SourceCode\Repos\CardApps.WindowsApp\obj\Debug\CardApps.WindowsApp.csproj.GenerateResource.cache
+C:\SourceCode\Repos\CardApps.WindowsApp\obj\Debug\CardApps.WindowsApp.csproj.CoreCompileInputs.cache
+C:\SourceCode\Repos\CardApps.WindowsApp\obj\Debug\CardApps.WindowsApp.csproj.CopyComplete
+C:\SourceCode\Repos\CardApps.WindowsApp\obj\Debug\CardApps.WindowsApp.exe
+C:\SourceCode\Repos\CardApps.WindowsApp\obj\Debug\CardApps.WindowsApp.pdb
