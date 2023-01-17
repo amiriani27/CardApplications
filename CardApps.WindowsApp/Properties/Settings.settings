@@ -9,7 +9,7 @@
       <Value Profile="(Default)">..\..\Images\Cards\</Value>
     </Setting>
     <Setting Name="CardGameImageSkinPath" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">..\..\Images\Cards\cardSkim.png</Value>
+      <Value Profile="(Default)">..\..\Images\Cards\cardSkin.png</Value>
     </Setting>
     <Setting Name="PlayerName" Type="System.String" Scope="User">
       <Value Profile="(Default)">Andrew</Value>

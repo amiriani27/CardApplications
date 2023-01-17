@@ -37,6 +37,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -45,16 +47,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CardGameFramework\Extensions.cs" />
     <Compile Include="CardGameFramework\Card.cs" />
     <Compile Include="CardGameFramework\Deck.cs" />
     <Compile Include="CardGameFramework\Hand.cs" />
+    <Compile Include="CardGameFramework\Player2.cs" />
+    <Compile Include="CardGame\War.cs" />
     <Compile Include="CardGame\Casino.cs" />
     <Compile Include="CardGame\Pinnocle.cs" />
     <Compile Include="CardGame\Euchre.cs" />
     <Compile Include="CardGame\Player.cs" />
     <Compile Include="CardGame\State.cs" />
     <Compile Include="Constants.cs" />
-    <Compile Include="GameManger.cs" />
+    <Compile Include="GameManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

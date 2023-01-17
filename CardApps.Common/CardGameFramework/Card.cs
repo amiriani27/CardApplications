@@ -95,4 +95,11 @@ namespace CardApps.Common
                 return suit.ToString().ToUpper() + ": " + faceVal.ToString();
         }
     }
+
+    public class Card2
+    {
+        public string DisplayName { get; set; }
+        public Suit Suit { get; set; }
+        public int Value { get; set; }
+    }
 }

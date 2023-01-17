@@ -8,3 +8,13 @@ C:\SourceCode\Repos\CardApps.UnitTest\obj\Debug\CardApps.prjCards.UnitTests.cspr
 C:\SourceCode\Repos\CardApps.UnitTest\obj\Debug\CardApps.prjCards.UnitTests.csproj.CopyComplete
 C:\SourceCode\Repos\CardApps.UnitTest\obj\Debug\CardApps.UnitTest.dll
 C:\SourceCode\Repos\CardApps.UnitTest\obj\Debug\CardApps.UnitTest.pdb
+C:\GITSource\Repos\CardApplications\CardApps.UnitTest\bin\Debug\CardApps.UnitTest.dll
+C:\GITSource\Repos\CardApplications\CardApps.UnitTest\bin\Debug\CardApps.UnitTest.pdb
+C:\GITSource\Repos\CardApplications\CardApps.UnitTest\bin\Debug\CardApps.Common.dll
+C:\GITSource\Repos\CardApplications\CardApps.UnitTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\GITSource\Repos\CardApplications\CardApps.UnitTest\bin\Debug\CardApps.Common.pdb
+C:\GITSource\Repos\CardApplications\CardApps.UnitTest\obj\Debug\CardApps.prjCards.UnitTests.csproj.AssemblyReference.cache
+C:\GITSource\Repos\CardApplications\CardApps.UnitTest\obj\Debug\CardApps.prjCards.UnitTests.csproj.CoreCompileInputs.cache
+C:\GITSource\Repos\CardApplications\CardApps.UnitTest\obj\Debug\CardApps.prjCards.UnitTests.csproj.CopyComplete
+C:\GITSource\Repos\CardApplications\CardApps.UnitTest\obj\Debug\CardApps.UnitTest.dll
+C:\GITSource\Repos\CardApplications\CardApps.UnitTest\obj\Debug\CardApps.UnitTest.pdb

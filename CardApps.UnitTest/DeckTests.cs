@@ -8,6 +8,7 @@ namespace CardApps.UnitTest
     public class DeckTests
     {
         #region -- Euchre --
+        
         [TestMethod]
         public void InitializeEuchreGame()
         {
@@ -20,31 +21,34 @@ namespace CardApps.UnitTest
             dCards.Shuffle();
 
             Assert.IsNotNull(dCards);
+
         }
 
         [TestMethod]
         public void DealFirstEuchreHand_CountCardsRemaining()
         {
             int intNumOfPlayers = 4;
-            int expectedCardsLeft = CardTestHelper.STANDARD_DECK - (intNumOfPlayers * 4);
+            int expectedCardsLeft = CONSTANTS.EUCHRE_DECK - (intNumOfPlayers * 5);
             Euchre game = new Euchre(intNumOfPlayers);
 
-            game.SelectedGame = Euchre.GameType.casino;
+            game.SelectedGame = Euchre.GameType.euchre;
             game.DealNewGame();
 
             Deck dCards = game.CurrentDeck;
             Assert.IsNotNull(dCards);
-            //Assert.AreEqual(game.CardsOnTable.Hand.NumCards, 0);
             Assert.AreEqual(dCards.NumOfCardsInDeck(), expectedCardsLeft);
+
         }
+        
         #endregion
 
         #region -- Casino --
+        
         [TestMethod]
         public void InitializeCasinoGame()
         {
             Casino game = new Casino(4);
-            game.SelectedGame = Casino.GameType.euchre;
+            game.SelectedGame = Casino.GameType.casino;
 
             game.DealNewGame();
 
@@ -52,13 +56,14 @@ namespace CardApps.UnitTest
             dCards.Shuffle();
 
             Assert.IsNotNull(dCards);
+
         }
 
         [TestMethod]
         public void DealFirstCasinoHand_CountCardsRemaining()
         {
             int intNumOfPlayers = 3;
-            int expectedCardsLeft = CardTestHelper.STANDARD_DECK - (intNumOfPlayers * 4);
+            int expectedCardsLeft = CONSTANTS.STANDARD_DECK - (intNumOfPlayers * 4);
             Casino game = new Casino(intNumOfPlayers);
 
             game.SelectedGame = Casino.GameType.casino;
@@ -68,10 +73,13 @@ namespace CardApps.UnitTest
             Assert.IsNotNull(dCards);
             Assert.AreEqual(game.CardsOnTable.Hand.NumCards, 4);
             Assert.AreEqual(dCards.NumOfCardsInDeck(), expectedCardsLeft - game.CardsOnTable.Hand.NumCards);
+
         }
+        
         #endregion
 
         #region -- Pinnocle --
+        
         [TestMethod]
         public void InitializePinnocleGame()
         {
@@ -84,13 +92,14 @@ namespace CardApps.UnitTest
             dCards.Shuffle();
 
             Assert.IsNotNull(dCards);
+
         }
 
         [TestMethod]
         public void DealFirstPinnocleHand_CountCardsRemaining()
         {
             int intNumOfPlayers = 4;
-            int expectedCardsLeft = CardTestHelper.PINNOCLE_DECK - (intNumOfPlayers * 12);
+            int expectedCardsLeft = CONSTANTS.PINNOCLE_DECK - (intNumOfPlayers * 12);
             Pinnocle game = new Pinnocle(intNumOfPlayers);
 
             game.SelectedGame = Pinnocle.GameType.pinnochle;
@@ -98,10 +107,10 @@ namespace CardApps.UnitTest
 
             Deck dCards = game.CurrentDeck;
             Assert.IsNotNull(dCards);
-            //Assert.AreEqual(game.CardsOnTable.Hand.NumCards, 4);
             Assert.AreEqual(dCards.NumOfCardsInDeck(), expectedCardsLeft);
 
         }
+       
         #endregion
     }
 }

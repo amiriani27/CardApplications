@@ -1,0 +1,11 @@
+C:\GITSource\Repos\CardApplications\CardsConsoleApp\bin\Debug\CardsConsoleApp.exe.config
+C:\GITSource\Repos\CardApplications\CardsConsoleApp\bin\Debug\CardsConsoleApp.exe
+C:\GITSource\Repos\CardApplications\CardsConsoleApp\bin\Debug\CardsConsoleApp.pdb
+C:\GITSource\Repos\CardApplications\CardsConsoleApp\bin\Debug\CardApps.Common.dll
+C:\GITSource\Repos\CardApplications\CardsConsoleApp\bin\Debug\CardApps.Common.pdb
+C:\GITSource\Repos\CardApplications\CardsConsoleApp\obj\Debug\CardApps.ConsoleApp.csproj.AssemblyReference.cache
+C:\GITSource\Repos\CardApplications\CardsConsoleApp\obj\Debug\CardApps.ConsoleApp.csproj.SuggestedBindingRedirects.cache
+C:\GITSource\Repos\CardApplications\CardsConsoleApp\obj\Debug\CardApps.ConsoleApp.csproj.CoreCompileInputs.cache
+C:\GITSource\Repos\CardApplications\CardsConsoleApp\obj\Debug\CardApps.ConsoleApp.csproj.CopyComplete
+C:\GITSource\Repos\CardApplications\CardsConsoleApp\obj\Debug\CardsConsoleApp.exe
+C:\GITSource\Repos\CardApplications\CardsConsoleApp\obj\Debug\CardsConsoleApp.pdb

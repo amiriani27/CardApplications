@@ -4,3 +4,9 @@ C:\SourceCode\Repos\CardApps.Common\obj\Debug\CardApps.Common.csproj.AssemblyRef
 C:\SourceCode\Repos\CardApps.Common\obj\Debug\CardApps.Common.csproj.CoreCompileInputs.cache
 C:\SourceCode\Repos\CardApps.Common\obj\Debug\CardApps.Common.dll
 C:\SourceCode\Repos\CardApps.Common\obj\Debug\CardApps.Common.pdb
+C:\GITSource\Repos\CardApplications\CardApps.Common\bin\Debug\CardApps.Common.dll
+C:\GITSource\Repos\CardApplications\CardApps.Common\bin\Debug\CardApps.Common.pdb
+C:\GITSource\Repos\CardApplications\CardApps.Common\obj\Debug\CardApps.Common.csproj.AssemblyReference.cache
+C:\GITSource\Repos\CardApplications\CardApps.Common\obj\Debug\CardApps.Common.csproj.CoreCompileInputs.cache
+C:\GITSource\Repos\CardApplications\CardApps.Common\obj\Debug\CardApps.Common.dll
+C:\GITSource\Repos\CardApplications\CardApps.Common\obj\Debug\CardApps.Common.pdb

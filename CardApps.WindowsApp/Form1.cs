@@ -16,7 +16,7 @@ namespace CardApps.WindowsApp
     {
         #region Fields
 
-        private GameManger gameManager = null;
+        //GameManager gameManager = new GameManager();
 
         private int PLAYER_HAND;
         const int DECK_SIZE = 4;
@@ -32,12 +32,14 @@ namespace CardApps.WindowsApp
         private bool _hideDecisions = false;
 
         #endregion
+
         public Form1()
         {
             InitializeComponent();
             
         }
-# region Enums
+
+        # region Enums
         public enum GameType
         {
             euchre,
@@ -49,10 +51,10 @@ namespace CardApps.WindowsApp
 
         private void cmdExit_Click(object sender, EventArgs e)
         {
-            if (gameManager.MainThread != null)
+            if (GameManager.MainThread != null)
             {
-                if (gameManager.MainThread.IsAlive)
-                    gameManager.MainThread.Abort();
+                if (GameManager.MainThread.IsAlive)
+                    GameManager.MainThread.Abort();
             }
             
             Application.Exit();
@@ -81,6 +83,7 @@ namespace CardApps.WindowsApp
                 game.SelectedGame = Euchre.GameType.bridge;
                 PLAYER_HAND = 13;
             }
+
             game.DealNewGame();
 
             UpdateUIPlayerCards(); //Show the cards
@@ -388,13 +391,13 @@ namespace CardApps.WindowsApp
 
         private void LoadConfiguration()
         {
-   
+            
 
         }
 
         private void LoadGame()
         {
-            gameManager = new GameManger();
+            //gameManager = new GameManager();
         }
 
         private bool StartGame()
@@ -403,8 +406,8 @@ namespace CardApps.WindowsApp
             {
                 gameStates = GameStates.Idle;
 
-                gameManager.MainThread = new Thread(new ThreadStart(GamePlay));
-                gameManager.MainThread.Start();
+                GameManager.MainThread = new Thread(new ThreadStart(GamePlay));
+                GameManager.MainThread.Start();
             }
             catch (Exception e)
             {
@@ -489,7 +492,7 @@ namespace CardApps.WindowsApp
 
         private void optCasino_CheckedChanged(object sender, EventArgs e)
         {
-
+            GameManager.TypeOfGame = Common.GameType.casino;
         }
 
         private void GamePlay()
@@ -653,6 +656,37 @@ namespace CardApps.WindowsApp
         private void playOrPass4_OptionClicked(string optSelected)
         {
             game.Player4.GetPlayerDecision = (PlayerDecision)EnumerateOptionSelected(optSelected);
+        }
+
+        private void btnLoadForm2_Click(object sender, EventArgs e)
+        {
+            Form2 frm2 = new Form2();
+            frm2.ShowDialog();
+        }
+
+        private void optEuchre_Click(object sender, EventArgs e)
+        {
+            GameManager.TypeOfGame = Common.GameType.euchre;
+        }
+
+        private void optPinnochle_Click(object sender, EventArgs e)
+        {
+            GameManager.TypeOfGame = Common.GameType.pinnochle;
+        }
+
+        private void optBridge_Click(object sender, EventArgs e)
+        {
+            GameManager.TypeOfGame = Common.GameType.bridge;
+        }
+
+        private void optPhase10_Click(object sender, EventArgs e)
+        {
+            GameManager.TypeOfGame = Common.GameType.phase10;
+        }
+
+        private void optWar_Click(object sender, EventArgs e)
+        {
+            GameManager.TypeOfGame = Common.GameType.war;
         }
 
         //private void OptionClicked()

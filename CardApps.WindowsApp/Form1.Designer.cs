@@ -38,6 +38,8 @@
             this.lstPlayer2 = new System.Windows.Forms.ListBox();
             this.lstDeck = new System.Windows.Forms.ListBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.optWar = new System.Windows.Forms.RadioButton();
+            this.optPhase10 = new System.Windows.Forms.RadioButton();
             this.optCasino = new System.Windows.Forms.RadioButton();
             this.optBridge = new System.Windows.Forms.RadioButton();
             this.optPinnochle = new System.Windows.Forms.RadioButton();
@@ -80,10 +82,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.playOrPass3 = new CardApps.WindowsApp.PlayOrPass();
-            this.playOrPass4 = new CardApps.WindowsApp.PlayOrPass();
-            this.playOrPass1 = new CardApps.WindowsApp.PlayOrPass();
             this.playOrPass2 = new CardApps.WindowsApp.PlayOrPass();
+            this.playOrPass1 = new CardApps.WindowsApp.PlayOrPass();
+            this.playOrPass4 = new CardApps.WindowsApp.PlayOrPass();
+            this.playOrPass3 = new CardApps.WindowsApp.PlayOrPass();
+            this.btnLoadForm2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbCards)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.p1Card1)).BeginInit();
@@ -115,10 +118,9 @@
             // 
             // cmdExit
             // 
-            this.cmdExit.Location = new System.Drawing.Point(891, 736);
-            this.cmdExit.Margin = new System.Windows.Forms.Padding(4);
+            this.cmdExit.Location = new System.Drawing.Point(668, 598);
             this.cmdExit.Name = "cmdExit";
-            this.cmdExit.Size = new System.Drawing.Size(117, 28);
+            this.cmdExit.Size = new System.Drawing.Size(88, 23);
             this.cmdExit.TabIndex = 0;
             this.cmdExit.Text = "Exit";
             this.cmdExit.UseVisualStyleBackColor = true;
@@ -126,10 +128,9 @@
             // 
             // cmdShuffle
             // 
-            this.cmdShuffle.Location = new System.Drawing.Point(891, 700);
-            this.cmdShuffle.Margin = new System.Windows.Forms.Padding(4);
+            this.cmdShuffle.Location = new System.Drawing.Point(668, 569);
             this.cmdShuffle.Name = "cmdShuffle";
-            this.cmdShuffle.Size = new System.Drawing.Size(117, 28);
+            this.cmdShuffle.Size = new System.Drawing.Size(88, 23);
             this.cmdShuffle.TabIndex = 1;
             this.cmdShuffle.Text = "Shuffle";
             this.cmdShuffle.UseVisualStyleBackColor = true;
@@ -137,99 +138,108 @@
             // 
             // cmdGetCard
             // 
-            this.cmdGetCard.Location = new System.Drawing.Point(891, 665);
-            this.cmdGetCard.Margin = new System.Windows.Forms.Padding(4);
+            this.cmdGetCard.Location = new System.Drawing.Point(668, 540);
             this.cmdGetCard.Name = "cmdGetCard";
-            this.cmdGetCard.Size = new System.Drawing.Size(117, 28);
+            this.cmdGetCard.Size = new System.Drawing.Size(88, 23);
             this.cmdGetCard.TabIndex = 2;
             this.cmdGetCard.Text = "Get Card";
             this.cmdGetCard.UseVisualStyleBackColor = true;
             // 
             // pbCards
             // 
-            this.pbCards.Location = new System.Drawing.Point(16, 620);
-            this.pbCards.Margin = new System.Windows.Forms.Padding(4);
+            this.pbCards.Location = new System.Drawing.Point(12, 504);
             this.pbCards.Name = "pbCards";
-            this.pbCards.Size = new System.Drawing.Size(109, 144);
+            this.pbCards.Size = new System.Drawing.Size(82, 117);
             this.pbCards.TabIndex = 3;
             this.pbCards.TabStop = false;
             // 
             // lstPlayer1
             // 
             this.lstPlayer1.FormattingEnabled = true;
-            this.lstPlayer1.ItemHeight = 16;
-            this.lstPlayer1.Location = new System.Drawing.Point(415, 210);
-            this.lstPlayer1.Margin = new System.Windows.Forms.Padding(4);
+            this.lstPlayer1.Location = new System.Drawing.Point(311, 171);
             this.lstPlayer1.Name = "lstPlayer1";
-            this.lstPlayer1.Size = new System.Drawing.Size(179, 116);
+            this.lstPlayer1.Size = new System.Drawing.Size(135, 95);
             this.lstPlayer1.TabIndex = 4;
             this.lstPlayer1.DoubleClick += new System.EventHandler(this.lstPlayer1_DoubleClick);
             // 
             // lstPlayer4
             // 
             this.lstPlayer4.FormattingEnabled = true;
-            this.lstPlayer4.ItemHeight = 16;
-            this.lstPlayer4.Location = new System.Drawing.Point(269, 337);
-            this.lstPlayer4.Margin = new System.Windows.Forms.Padding(4);
+            this.lstPlayer4.Location = new System.Drawing.Point(202, 274);
             this.lstPlayer4.Name = "lstPlayer4";
-            this.lstPlayer4.Size = new System.Drawing.Size(179, 116);
+            this.lstPlayer4.Size = new System.Drawing.Size(135, 95);
             this.lstPlayer4.TabIndex = 5;
             this.lstPlayer4.DoubleClick += new System.EventHandler(this.lstPlayer4_DoubleClick);
             // 
             // lstPlayer3
             // 
             this.lstPlayer3.FormattingEnabled = true;
-            this.lstPlayer3.ItemHeight = 16;
-            this.lstPlayer3.Location = new System.Drawing.Point(415, 486);
-            this.lstPlayer3.Margin = new System.Windows.Forms.Padding(4);
+            this.lstPlayer3.Location = new System.Drawing.Point(311, 395);
             this.lstPlayer3.Name = "lstPlayer3";
-            this.lstPlayer3.Size = new System.Drawing.Size(179, 116);
+            this.lstPlayer3.Size = new System.Drawing.Size(135, 95);
             this.lstPlayer3.TabIndex = 6;
             this.lstPlayer3.DoubleClick += new System.EventHandler(this.lstPlayer3_DoubleClick);
             // 
             // lstPlayer2
             // 
             this.lstPlayer2.FormattingEnabled = true;
-            this.lstPlayer2.ItemHeight = 16;
-            this.lstPlayer2.Location = new System.Drawing.Point(575, 335);
-            this.lstPlayer2.Margin = new System.Windows.Forms.Padding(4);
+            this.lstPlayer2.Location = new System.Drawing.Point(431, 272);
             this.lstPlayer2.Name = "lstPlayer2";
-            this.lstPlayer2.Size = new System.Drawing.Size(179, 116);
+            this.lstPlayer2.Size = new System.Drawing.Size(135, 95);
             this.lstPlayer2.TabIndex = 7;
             this.lstPlayer2.DoubleClick += new System.EventHandler(this.lstPlayer2_DoubleClick);
             // 
             // lstDeck
             // 
             this.lstDeck.FormattingEnabled = true;
-            this.lstDeck.ItemHeight = 16;
-            this.lstDeck.Location = new System.Drawing.Point(811, 59);
-            this.lstDeck.Margin = new System.Windows.Forms.Padding(4);
+            this.lstDeck.Location = new System.Drawing.Point(608, 48);
             this.lstDeck.Name = "lstDeck";
-            this.lstDeck.Size = new System.Drawing.Size(179, 116);
+            this.lstDeck.Size = new System.Drawing.Size(135, 95);
             this.lstDeck.TabIndex = 8;
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.optWar);
+            this.groupBox1.Controls.Add(this.optPhase10);
             this.groupBox1.Controls.Add(this.optCasino);
             this.groupBox1.Controls.Add(this.optBridge);
             this.groupBox1.Controls.Add(this.optPinnochle);
             this.groupBox1.Controls.Add(this.optEuchre);
-            this.groupBox1.Location = new System.Drawing.Point(852, 480);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Location = new System.Drawing.Point(104, 390);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(139, 142);
+            this.groupBox1.Size = new System.Drawing.Size(104, 202);
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
             // 
+            // optWar
+            // 
+            this.optWar.AutoSize = true;
+            this.optWar.Location = new System.Drawing.Point(6, 170);
+            this.optWar.Name = "optWar";
+            this.optWar.Size = new System.Drawing.Size(45, 17);
+            this.optWar.TabIndex = 15;
+            this.optWar.Text = "War";
+            this.optWar.UseVisualStyleBackColor = true;
+            this.optWar.Click += new System.EventHandler(this.optWar_Click);
+            // 
+            // optPhase10
+            // 
+            this.optPhase10.AutoSize = true;
+            this.optPhase10.Location = new System.Drawing.Point(6, 147);
+            this.optPhase10.Name = "optPhase10";
+            this.optPhase10.Size = new System.Drawing.Size(67, 17);
+            this.optPhase10.TabIndex = 14;
+            this.optPhase10.Text = "Phase10";
+            this.optPhase10.UseVisualStyleBackColor = true;
+            this.optPhase10.Click += new System.EventHandler(this.optPhase10_Click);
+            // 
             // optCasino
             // 
             this.optCasino.AutoSize = true;
-            this.optCasino.Location = new System.Drawing.Point(8, 153);
-            this.optCasino.Margin = new System.Windows.Forms.Padding(4);
+            this.optCasino.Location = new System.Drawing.Point(6, 124);
             this.optCasino.Name = "optCasino";
-            this.optCasino.Size = new System.Drawing.Size(72, 21);
+            this.optCasino.Size = new System.Drawing.Size(57, 17);
             this.optCasino.TabIndex = 13;
             this.optCasino.Text = "Casino";
             this.optCasino.UseVisualStyleBackColor = true;
@@ -238,270 +248,244 @@
             // optBridge
             // 
             this.optBridge.AutoSize = true;
-            this.optBridge.Location = new System.Drawing.Point(8, 124);
-            this.optBridge.Margin = new System.Windows.Forms.Padding(4);
+            this.optBridge.Location = new System.Drawing.Point(6, 101);
             this.optBridge.Name = "optBridge";
-            this.optBridge.Size = new System.Drawing.Size(70, 21);
+            this.optBridge.Size = new System.Drawing.Size(55, 17);
             this.optBridge.TabIndex = 12;
             this.optBridge.Text = "Bridge";
             this.optBridge.UseVisualStyleBackColor = true;
+            this.optBridge.Click += new System.EventHandler(this.optBridge_Click);
             // 
             // optPinnochle
             // 
             this.optPinnochle.AutoSize = true;
-            this.optPinnochle.Location = new System.Drawing.Point(8, 96);
-            this.optPinnochle.Margin = new System.Windows.Forms.Padding(4);
+            this.optPinnochle.Location = new System.Drawing.Point(6, 78);
             this.optPinnochle.Name = "optPinnochle";
-            this.optPinnochle.Size = new System.Drawing.Size(91, 21);
+            this.optPinnochle.Size = new System.Drawing.Size(72, 17);
             this.optPinnochle.TabIndex = 11;
             this.optPinnochle.Text = "Pinnochle";
             this.optPinnochle.UseVisualStyleBackColor = true;
+            this.optPinnochle.Click += new System.EventHandler(this.optPinnochle_Click);
             // 
             // optEuchre
             // 
             this.optEuchre.AutoSize = true;
             this.optEuchre.Checked = true;
-            this.optEuchre.Location = new System.Drawing.Point(8, 68);
-            this.optEuchre.Margin = new System.Windows.Forms.Padding(4);
+            this.optEuchre.Location = new System.Drawing.Point(6, 55);
             this.optEuchre.Name = "optEuchre";
-            this.optEuchre.Size = new System.Drawing.Size(74, 21);
+            this.optEuchre.Size = new System.Drawing.Size(59, 17);
             this.optEuchre.TabIndex = 10;
             this.optEuchre.TabStop = true;
             this.optEuchre.Text = "Euchre";
             this.optEuchre.UseVisualStyleBackColor = true;
+            this.optEuchre.Click += new System.EventHandler(this.optEuchre_Click);
             // 
             // txtTrump
             // 
-            this.txtTrump.Location = new System.Drawing.Point(813, 139);
-            this.txtTrump.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTrump.Location = new System.Drawing.Point(610, 113);
             this.txtTrump.Name = "txtTrump";
             this.txtTrump.ReadOnly = true;
-            this.txtTrump.Size = new System.Drawing.Size(176, 22);
+            this.txtTrump.Size = new System.Drawing.Size(133, 20);
             this.txtTrump.TabIndex = 10;
             // 
             // p1Card1
             // 
-            this.p1Card1.Location = new System.Drawing.Point(379, 59);
-            this.p1Card1.Margin = new System.Windows.Forms.Padding(4);
+            this.p1Card1.Location = new System.Drawing.Point(284, 48);
             this.p1Card1.Name = "p1Card1";
-            this.p1Card1.Size = new System.Drawing.Size(109, 144);
+            this.p1Card1.Size = new System.Drawing.Size(82, 117);
             this.p1Card1.TabIndex = 11;
             this.p1Card1.TabStop = false;
             // 
             // p1Card2
             // 
-            this.p1Card2.Location = new System.Drawing.Point(413, 59);
-            this.p1Card2.Margin = new System.Windows.Forms.Padding(4);
+            this.p1Card2.Location = new System.Drawing.Point(310, 48);
             this.p1Card2.Name = "p1Card2";
-            this.p1Card2.Size = new System.Drawing.Size(109, 144);
+            this.p1Card2.Size = new System.Drawing.Size(82, 117);
             this.p1Card2.TabIndex = 12;
             this.p1Card2.TabStop = false;
             this.p1Card2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // p1Card3
             // 
-            this.p1Card3.Location = new System.Drawing.Point(448, 59);
-            this.p1Card3.Margin = new System.Windows.Forms.Padding(4);
+            this.p1Card3.Location = new System.Drawing.Point(336, 48);
             this.p1Card3.Name = "p1Card3";
-            this.p1Card3.Size = new System.Drawing.Size(109, 144);
+            this.p1Card3.Size = new System.Drawing.Size(82, 117);
             this.p1Card3.TabIndex = 13;
             this.p1Card3.TabStop = false;
             // 
             // p1Card4
             // 
-            this.p1Card4.Location = new System.Drawing.Point(480, 59);
-            this.p1Card4.Margin = new System.Windows.Forms.Padding(4);
+            this.p1Card4.Location = new System.Drawing.Point(360, 48);
             this.p1Card4.Name = "p1Card4";
-            this.p1Card4.Size = new System.Drawing.Size(109, 144);
+            this.p1Card4.Size = new System.Drawing.Size(82, 117);
             this.p1Card4.TabIndex = 14;
             this.p1Card4.TabStop = false;
             // 
             // p1Card5
             // 
-            this.p1Card5.Location = new System.Drawing.Point(515, 59);
-            this.p1Card5.Margin = new System.Windows.Forms.Padding(4);
+            this.p1Card5.Location = new System.Drawing.Point(386, 48);
             this.p1Card5.Name = "p1Card5";
-            this.p1Card5.Size = new System.Drawing.Size(109, 144);
+            this.p1Card5.Size = new System.Drawing.Size(82, 117);
             this.p1Card5.TabIndex = 15;
             this.p1Card5.TabStop = false;
             // 
             // p4Card5
             // 
-            this.p4Card5.Location = new System.Drawing.Point(152, 310);
-            this.p4Card5.Margin = new System.Windows.Forms.Padding(4);
+            this.p4Card5.Location = new System.Drawing.Point(114, 252);
             this.p4Card5.Name = "p4Card5";
-            this.p4Card5.Size = new System.Drawing.Size(109, 144);
+            this.p4Card5.Size = new System.Drawing.Size(82, 117);
             this.p4Card5.TabIndex = 20;
             this.p4Card5.TabStop = false;
             // 
             // p4Card4
             // 
-            this.p4Card4.Location = new System.Drawing.Point(117, 310);
-            this.p4Card4.Margin = new System.Windows.Forms.Padding(4);
+            this.p4Card4.Location = new System.Drawing.Point(88, 252);
             this.p4Card4.Name = "p4Card4";
-            this.p4Card4.Size = new System.Drawing.Size(109, 144);
+            this.p4Card4.Size = new System.Drawing.Size(82, 117);
             this.p4Card4.TabIndex = 19;
             this.p4Card4.TabStop = false;
             // 
             // p4Card3
             // 
-            this.p4Card3.Location = new System.Drawing.Point(85, 310);
-            this.p4Card3.Margin = new System.Windows.Forms.Padding(4);
+            this.p4Card3.Location = new System.Drawing.Point(64, 252);
             this.p4Card3.Name = "p4Card3";
-            this.p4Card3.Size = new System.Drawing.Size(109, 144);
+            this.p4Card3.Size = new System.Drawing.Size(82, 117);
             this.p4Card3.TabIndex = 18;
             this.p4Card3.TabStop = false;
             // 
             // p4Card2
             // 
-            this.p4Card2.Location = new System.Drawing.Point(51, 310);
-            this.p4Card2.Margin = new System.Windows.Forms.Padding(4);
+            this.p4Card2.Location = new System.Drawing.Point(38, 252);
             this.p4Card2.Name = "p4Card2";
-            this.p4Card2.Size = new System.Drawing.Size(109, 144);
+            this.p4Card2.Size = new System.Drawing.Size(82, 117);
             this.p4Card2.TabIndex = 17;
             this.p4Card2.TabStop = false;
             // 
             // p4Card1
             // 
-            this.p4Card1.Location = new System.Drawing.Point(16, 310);
-            this.p4Card1.Margin = new System.Windows.Forms.Padding(4);
+            this.p4Card1.Location = new System.Drawing.Point(12, 252);
             this.p4Card1.Name = "p4Card1";
-            this.p4Card1.Size = new System.Drawing.Size(109, 144);
+            this.p4Card1.Size = new System.Drawing.Size(82, 117);
             this.p4Card1.TabIndex = 16;
             this.p4Card1.TabStop = false;
             // 
             // p2Card5
             // 
-            this.p2Card5.Location = new System.Drawing.Point(899, 308);
-            this.p2Card5.Margin = new System.Windows.Forms.Padding(4);
+            this.p2Card5.Location = new System.Drawing.Point(674, 250);
             this.p2Card5.Name = "p2Card5";
-            this.p2Card5.Size = new System.Drawing.Size(109, 144);
+            this.p2Card5.Size = new System.Drawing.Size(82, 117);
             this.p2Card5.TabIndex = 25;
             this.p2Card5.TabStop = false;
             // 
             // p2Card4
             // 
-            this.p2Card4.Location = new System.Drawing.Point(864, 308);
-            this.p2Card4.Margin = new System.Windows.Forms.Padding(4);
+            this.p2Card4.Location = new System.Drawing.Point(648, 250);
             this.p2Card4.Name = "p2Card4";
-            this.p2Card4.Size = new System.Drawing.Size(109, 144);
+            this.p2Card4.Size = new System.Drawing.Size(82, 117);
             this.p2Card4.TabIndex = 24;
             this.p2Card4.TabStop = false;
             // 
             // p2Card3
             // 
-            this.p2Card3.Location = new System.Drawing.Point(832, 308);
-            this.p2Card3.Margin = new System.Windows.Forms.Padding(4);
+            this.p2Card3.Location = new System.Drawing.Point(624, 250);
             this.p2Card3.Name = "p2Card3";
-            this.p2Card3.Size = new System.Drawing.Size(109, 144);
+            this.p2Card3.Size = new System.Drawing.Size(82, 117);
             this.p2Card3.TabIndex = 23;
             this.p2Card3.TabStop = false;
             // 
             // p2Card2
             // 
-            this.p2Card2.Location = new System.Drawing.Point(797, 308);
-            this.p2Card2.Margin = new System.Windows.Forms.Padding(4);
+            this.p2Card2.Location = new System.Drawing.Point(598, 250);
             this.p2Card2.Name = "p2Card2";
-            this.p2Card2.Size = new System.Drawing.Size(109, 144);
+            this.p2Card2.Size = new System.Drawing.Size(82, 117);
             this.p2Card2.TabIndex = 22;
             this.p2Card2.TabStop = false;
             // 
             // p2Card1
             // 
-            this.p2Card1.Location = new System.Drawing.Point(763, 308);
-            this.p2Card1.Margin = new System.Windows.Forms.Padding(4);
+            this.p2Card1.Location = new System.Drawing.Point(572, 250);
             this.p2Card1.Name = "p2Card1";
-            this.p2Card1.Size = new System.Drawing.Size(109, 144);
+            this.p2Card1.Size = new System.Drawing.Size(82, 117);
             this.p2Card1.TabIndex = 21;
             this.p2Card1.TabStop = false;
             // 
             // p3Card5
             // 
-            this.p3Card5.Location = new System.Drawing.Point(515, 615);
-            this.p3Card5.Margin = new System.Windows.Forms.Padding(4);
+            this.p3Card5.Location = new System.Drawing.Point(386, 500);
             this.p3Card5.Name = "p3Card5";
-            this.p3Card5.Size = new System.Drawing.Size(109, 144);
+            this.p3Card5.Size = new System.Drawing.Size(82, 117);
             this.p3Card5.TabIndex = 30;
             this.p3Card5.TabStop = false;
             // 
             // p3Card4
             // 
-            this.p3Card4.Location = new System.Drawing.Point(480, 615);
-            this.p3Card4.Margin = new System.Windows.Forms.Padding(4);
+            this.p3Card4.Location = new System.Drawing.Point(360, 500);
             this.p3Card4.Name = "p3Card4";
-            this.p3Card4.Size = new System.Drawing.Size(109, 144);
+            this.p3Card4.Size = new System.Drawing.Size(82, 117);
             this.p3Card4.TabIndex = 29;
             this.p3Card4.TabStop = false;
             // 
             // p3Card3
             // 
-            this.p3Card3.Location = new System.Drawing.Point(448, 615);
-            this.p3Card3.Margin = new System.Windows.Forms.Padding(4);
+            this.p3Card3.Location = new System.Drawing.Point(336, 500);
             this.p3Card3.Name = "p3Card3";
-            this.p3Card3.Size = new System.Drawing.Size(109, 144);
+            this.p3Card3.Size = new System.Drawing.Size(82, 117);
             this.p3Card3.TabIndex = 28;
             this.p3Card3.TabStop = false;
             // 
             // p3Card2
             // 
-            this.p3Card2.Location = new System.Drawing.Point(413, 615);
-            this.p3Card2.Margin = new System.Windows.Forms.Padding(4);
+            this.p3Card2.Location = new System.Drawing.Point(310, 500);
             this.p3Card2.Name = "p3Card2";
-            this.p3Card2.Size = new System.Drawing.Size(109, 144);
+            this.p3Card2.Size = new System.Drawing.Size(82, 117);
             this.p3Card2.TabIndex = 27;
             this.p3Card2.TabStop = false;
             // 
             // p3Card1
             // 
-            this.p3Card1.Location = new System.Drawing.Point(379, 615);
-            this.p3Card1.Margin = new System.Windows.Forms.Padding(4);
+            this.p3Card1.Location = new System.Drawing.Point(284, 500);
             this.p3Card1.Name = "p3Card1";
-            this.p3Card1.Size = new System.Drawing.Size(109, 144);
+            this.p3Card1.Size = new System.Drawing.Size(82, 117);
             this.p3Card1.TabIndex = 26;
             this.p3Card1.TabStop = false;
             // 
             // dCard1
             // 
-            this.dCard1.Location = new System.Drawing.Point(457, 335);
-            this.dCard1.Margin = new System.Windows.Forms.Padding(4);
+            this.dCard1.Location = new System.Drawing.Point(343, 272);
             this.dCard1.Name = "dCard1";
-            this.dCard1.Size = new System.Drawing.Size(109, 144);
+            this.dCard1.Size = new System.Drawing.Size(82, 117);
             this.dCard1.TabIndex = 31;
             this.dCard1.TabStop = false;
             // 
             // dCard4
             // 
-            this.dCard4.Location = new System.Drawing.Point(16, 64);
-            this.dCard4.Margin = new System.Windows.Forms.Padding(4);
+            this.dCard4.Location = new System.Drawing.Point(12, 52);
             this.dCard4.Name = "dCard4";
-            this.dCard4.Size = new System.Drawing.Size(109, 144);
+            this.dCard4.Size = new System.Drawing.Size(82, 117);
             this.dCard4.TabIndex = 32;
             this.dCard4.TabStop = false;
             // 
             // dCard3
             // 
-            this.dCard3.Location = new System.Drawing.Point(36, 84);
-            this.dCard3.Margin = new System.Windows.Forms.Padding(4);
+            this.dCard3.Location = new System.Drawing.Point(27, 68);
             this.dCard3.Name = "dCard3";
-            this.dCard3.Size = new System.Drawing.Size(109, 144);
+            this.dCard3.Size = new System.Drawing.Size(82, 117);
             this.dCard3.TabIndex = 33;
             this.dCard3.TabStop = false;
             // 
             // dCard2
             // 
-            this.dCard2.Location = new System.Drawing.Point(63, 105);
-            this.dCard2.Margin = new System.Windows.Forms.Padding(4);
+            this.dCard2.Location = new System.Drawing.Point(47, 85);
             this.dCard2.Name = "dCard2";
-            this.dCard2.Size = new System.Drawing.Size(109, 144);
+            this.dCard2.Size = new System.Drawing.Size(82, 117);
             this.dCard2.TabIndex = 34;
             this.dCard2.TabStop = false;
             // 
             // cmdShowDealer
             // 
-            this.cmdShowDealer.Location = new System.Drawing.Point(891, 629);
-            this.cmdShowDealer.Margin = new System.Windows.Forms.Padding(4);
+            this.cmdShowDealer.Location = new System.Drawing.Point(668, 511);
             this.cmdShowDealer.Name = "cmdShowDealer";
-            this.cmdShowDealer.Size = new System.Drawing.Size(117, 28);
+            this.cmdShowDealer.Size = new System.Drawing.Size(88, 23);
             this.cmdShowDealer.TabIndex = 35;
             this.cmdShowDealer.Text = "Show Dealer";
             this.cmdShowDealer.UseVisualStyleBackColor = true;
@@ -513,11 +497,9 @@
             this.groupBox2.Controls.Add(this.optThreePlayers);
             this.groupBox2.Controls.Add(this.optTwoPlayers);
             this.groupBox2.Controls.Add(this.optOnePlayer);
-            this.groupBox2.Location = new System.Drawing.Point(712, 480);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox2.Location = new System.Drawing.Point(534, 390);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox2.Size = new System.Drawing.Size(132, 142);
+            this.groupBox2.Size = new System.Drawing.Size(99, 141);
             this.groupBox2.TabIndex = 36;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "# of Players";
@@ -525,10 +507,9 @@
             // optFourPlayers
             // 
             this.optFourPlayers.AutoSize = true;
-            this.optFourPlayers.Location = new System.Drawing.Point(8, 153);
-            this.optFourPlayers.Margin = new System.Windows.Forms.Padding(4);
+            this.optFourPlayers.Location = new System.Drawing.Point(6, 124);
             this.optFourPlayers.Name = "optFourPlayers";
-            this.optFourPlayers.Size = new System.Drawing.Size(37, 21);
+            this.optFourPlayers.Size = new System.Drawing.Size(31, 17);
             this.optFourPlayers.TabIndex = 14;
             this.optFourPlayers.Text = "4";
             this.optFourPlayers.UseVisualStyleBackColor = true;
@@ -536,10 +517,9 @@
             // optThreePlayers
             // 
             this.optThreePlayers.AutoSize = true;
-            this.optThreePlayers.Location = new System.Drawing.Point(8, 124);
-            this.optThreePlayers.Margin = new System.Windows.Forms.Padding(4);
+            this.optThreePlayers.Location = new System.Drawing.Point(6, 101);
             this.optThreePlayers.Name = "optThreePlayers";
-            this.optThreePlayers.Size = new System.Drawing.Size(37, 21);
+            this.optThreePlayers.Size = new System.Drawing.Size(31, 17);
             this.optThreePlayers.TabIndex = 13;
             this.optThreePlayers.Text = "3";
             this.optThreePlayers.UseVisualStyleBackColor = true;
@@ -548,10 +528,9 @@
             // 
             this.optTwoPlayers.AutoSize = true;
             this.optTwoPlayers.Checked = true;
-            this.optTwoPlayers.Location = new System.Drawing.Point(8, 96);
-            this.optTwoPlayers.Margin = new System.Windows.Forms.Padding(4);
+            this.optTwoPlayers.Location = new System.Drawing.Point(6, 78);
             this.optTwoPlayers.Name = "optTwoPlayers";
-            this.optTwoPlayers.Size = new System.Drawing.Size(37, 21);
+            this.optTwoPlayers.Size = new System.Drawing.Size(31, 17);
             this.optTwoPlayers.TabIndex = 12;
             this.optTwoPlayers.TabStop = true;
             this.optTwoPlayers.Text = "2";
@@ -560,10 +539,9 @@
             // optOnePlayer
             // 
             this.optOnePlayer.AutoSize = true;
-            this.optOnePlayer.Location = new System.Drawing.Point(8, 68);
-            this.optOnePlayer.Margin = new System.Windows.Forms.Padding(4);
+            this.optOnePlayer.Location = new System.Drawing.Point(6, 55);
             this.optOnePlayer.Name = "optOnePlayer";
-            this.optOnePlayer.Size = new System.Drawing.Size(37, 21);
+            this.optOnePlayer.Size = new System.Drawing.Size(31, 17);
             this.optOnePlayer.TabIndex = 11;
             this.optOnePlayer.Text = "1";
             this.optOnePlayer.UseVisualStyleBackColor = true;
@@ -573,10 +551,9 @@
             this.lblPlayer4Decision.AutoSize = true;
             this.lblPlayer4Decision.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPlayer4Decision.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.lblPlayer4Decision.Location = new System.Drawing.Point(269, 314);
-            this.lblPlayer4Decision.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPlayer4Decision.Location = new System.Drawing.Point(202, 255);
             this.lblPlayer4Decision.Name = "lblPlayer4Decision";
-            this.lblPlayer4Decision.Size = new System.Drawing.Size(114, 20);
+            this.lblPlayer4Decision.Size = new System.Drawing.Size(82, 16);
             this.lblPlayer4Decision.TabIndex = 37;
             this.lblPlayer4Decision.Text = "PICK IT UP";
             // 
@@ -585,10 +562,9 @@
             this.lblPlayer2Decision.AutoSize = true;
             this.lblPlayer2Decision.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPlayer2Decision.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.lblPlayer2Decision.Location = new System.Drawing.Point(644, 459);
-            this.lblPlayer2Decision.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPlayer2Decision.Location = new System.Drawing.Point(483, 373);
             this.lblPlayer2Decision.Name = "lblPlayer2Decision";
-            this.lblPlayer2Decision.Size = new System.Drawing.Size(114, 20);
+            this.lblPlayer2Decision.Size = new System.Drawing.Size(82, 16);
             this.lblPlayer2Decision.TabIndex = 38;
             this.lblPlayer2Decision.Text = "PICK IT UP";
             // 
@@ -597,10 +573,9 @@
             this.lblPlayer1Decision.AutoSize = true;
             this.lblPlayer1Decision.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPlayer1Decision.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.lblPlayer1Decision.Location = new System.Drawing.Point(603, 210);
-            this.lblPlayer1Decision.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPlayer1Decision.Location = new System.Drawing.Point(452, 171);
             this.lblPlayer1Decision.Name = "lblPlayer1Decision";
-            this.lblPlayer1Decision.Size = new System.Drawing.Size(114, 20);
+            this.lblPlayer1Decision.Size = new System.Drawing.Size(82, 16);
             this.lblPlayer1Decision.TabIndex = 39;
             this.lblPlayer1Decision.Text = "PICK IT UP";
             // 
@@ -609,29 +584,26 @@
             this.lblPlayer3Decision.AutoSize = true;
             this.lblPlayer3Decision.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPlayer3Decision.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.lblPlayer3Decision.Location = new System.Drawing.Point(296, 583);
-            this.lblPlayer3Decision.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPlayer3Decision.Location = new System.Drawing.Point(222, 474);
             this.lblPlayer3Decision.Name = "lblPlayer3Decision";
-            this.lblPlayer3Decision.Size = new System.Drawing.Size(114, 20);
+            this.lblPlayer3Decision.Size = new System.Drawing.Size(82, 16);
             this.lblPlayer3Decision.TabIndex = 40;
             this.lblPlayer3Decision.Text = "PICK IT UP";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(711, 727);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(533, 591);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 17);
+            this.label1.Size = new System.Drawing.Size(35, 13);
             this.label1.TabIndex = 41;
             this.label1.Text = "label1";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(715, 663);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Location = new System.Drawing.Point(536, 539);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(168, 30);
+            this.button1.Size = new System.Drawing.Size(126, 24);
             this.button1.TabIndex = 42;
             this.button1.Text = "Force Player Decisions";
             this.button1.UseVisualStyleBackColor = true;
@@ -639,60 +611,70 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(715, 694);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
+            this.button2.Location = new System.Drawing.Point(536, 564);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(168, 30);
+            this.button2.Size = new System.Drawing.Size(126, 24);
             this.button2.TabIndex = 43;
             this.button2.Text = "Force Cards Played";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // playOrPass3
-            // 
-            this.playOrPass3.Location = new System.Drawing.Point(379, 767);
-            this.playOrPass3.Margin = new System.Windows.Forms.Padding(5);
-            this.playOrPass3.Name = "playOrPass3";
-            this.playOrPass3.Size = new System.Drawing.Size(264, 38);
-            this.playOrPass3.TabIndex = 44;
-            this.playOrPass3.Visible = false;
-            this.playOrPass3.OptionClicked += new CardApps.WindowsApp.PlayOrPass.OptionClickedHandler(this.playOrPass3_OptionClicked);
-            // 
-            // playOrPass4
-            // 
-            this.playOrPass4.Location = new System.Drawing.Point(16, 265);
-            this.playOrPass4.Margin = new System.Windows.Forms.Padding(5);
-            this.playOrPass4.Name = "playOrPass4";
-            this.playOrPass4.Size = new System.Drawing.Size(261, 38);
-            this.playOrPass4.TabIndex = 45;
-            this.playOrPass4.Visible = false;
-            this.playOrPass4.OptionClicked += new CardApps.WindowsApp.PlayOrPass.OptionClickedHandler(this.playOrPass4_OptionClicked);
-            // 
-            // playOrPass1
-            // 
-            this.playOrPass1.Location = new System.Drawing.Point(379, 15);
-            this.playOrPass1.Margin = new System.Windows.Forms.Padding(5);
-            this.playOrPass1.Name = "playOrPass1";
-            this.playOrPass1.Size = new System.Drawing.Size(261, 38);
-            this.playOrPass1.TabIndex = 46;
-            this.playOrPass1.Visible = false;
-            this.playOrPass1.OptionClicked += new CardApps.WindowsApp.PlayOrPass.OptionClickedHandler(this.playOrPass1_OptionClicked);
-            // 
             // playOrPass2
             // 
-            this.playOrPass2.Location = new System.Drawing.Point(763, 265);
-            this.playOrPass2.Margin = new System.Windows.Forms.Padding(5);
+            this.playOrPass2.Location = new System.Drawing.Point(572, 215);
+            this.playOrPass2.Margin = new System.Windows.Forms.Padding(4);
             this.playOrPass2.Name = "playOrPass2";
-            this.playOrPass2.Size = new System.Drawing.Size(265, 37);
+            this.playOrPass2.Size = new System.Drawing.Size(199, 30);
             this.playOrPass2.TabIndex = 47;
             this.playOrPass2.Visible = false;
             this.playOrPass2.OptionClicked += new CardApps.WindowsApp.PlayOrPass.OptionClickedHandler(this.playOrPass2_OptionClicked);
             // 
+            // playOrPass1
+            // 
+            this.playOrPass1.Location = new System.Drawing.Point(284, 12);
+            this.playOrPass1.Margin = new System.Windows.Forms.Padding(4);
+            this.playOrPass1.Name = "playOrPass1";
+            this.playOrPass1.Size = new System.Drawing.Size(196, 31);
+            this.playOrPass1.TabIndex = 46;
+            this.playOrPass1.Visible = false;
+            this.playOrPass1.OptionClicked += new CardApps.WindowsApp.PlayOrPass.OptionClickedHandler(this.playOrPass1_OptionClicked);
+            // 
+            // playOrPass4
+            // 
+            this.playOrPass4.Location = new System.Drawing.Point(12, 215);
+            this.playOrPass4.Margin = new System.Windows.Forms.Padding(4);
+            this.playOrPass4.Name = "playOrPass4";
+            this.playOrPass4.Size = new System.Drawing.Size(196, 31);
+            this.playOrPass4.TabIndex = 45;
+            this.playOrPass4.Visible = false;
+            this.playOrPass4.OptionClicked += new CardApps.WindowsApp.PlayOrPass.OptionClickedHandler(this.playOrPass4_OptionClicked);
+            // 
+            // playOrPass3
+            // 
+            this.playOrPass3.Location = new System.Drawing.Point(284, 623);
+            this.playOrPass3.Margin = new System.Windows.Forms.Padding(4);
+            this.playOrPass3.Name = "playOrPass3";
+            this.playOrPass3.Size = new System.Drawing.Size(198, 31);
+            this.playOrPass3.TabIndex = 44;
+            this.playOrPass3.Visible = false;
+            this.playOrPass3.OptionClicked += new CardApps.WindowsApp.PlayOrPass.OptionClickedHandler(this.playOrPass3_OptionClicked);
+            // 
+            // btnLoadForm2
+            // 
+            this.btnLoadForm2.Location = new System.Drawing.Point(668, 627);
+            this.btnLoadForm2.Name = "btnLoadForm2";
+            this.btnLoadForm2.Size = new System.Drawing.Size(88, 23);
+            this.btnLoadForm2.TabIndex = 48;
+            this.btnLoadForm2.Text = "Load Form 2";
+            this.btnLoadForm2.UseVisualStyleBackColor = true;
+            this.btnLoadForm2.Click += new System.EventHandler(this.btnLoadForm2_Click);
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1031, 855);
+            this.ClientSize = new System.Drawing.Size(773, 695);
+            this.Controls.Add(this.btnLoadForm2);
             this.Controls.Add(this.playOrPass2);
             this.Controls.Add(this.playOrPass1);
             this.Controls.Add(this.playOrPass4);
@@ -741,7 +723,6 @@
             this.Controls.Add(this.cmdGetCard);
             this.Controls.Add(this.cmdShuffle);
             this.Controls.Add(this.cmdExit);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -837,6 +818,9 @@
         private PlayOrPass playOrPass4;
         private PlayOrPass playOrPass1;
         private PlayOrPass playOrPass2;
+        private System.Windows.Forms.Button btnLoadForm2;
+        private System.Windows.Forms.RadioButton optPhase10;
+        private System.Windows.Forms.RadioButton optWar;
     }
 }
 

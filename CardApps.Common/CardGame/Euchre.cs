@@ -91,19 +91,19 @@ namespace CardApps.Common
             {
                 case (GameType.euchre):
                     deck = new Deck("Euchre");
-                    _numberOfCardsperHand = Constants.EUCHRE_HAND;
+                    _numberOfCardsperHand = CONSTANTS.EUCHRE_HAND;
                     break;
                 case GameType.pinnochle:
                     deck = new Deck("Pinnochle");
-                    _numberOfCardsperHand = Constants.PINNOCLE_HAND; 
+                    _numberOfCardsperHand = CONSTANTS.PINNOCLE_HAND; 
                     break;
                 case GameType.bridge:
                     deck = new Deck("Bridge");
-                    _numberOfCardsperHand = Constants.BRIDGE_HAND; 
+                    _numberOfCardsperHand = CONSTANTS.BRIDGE_HAND; 
                     break;
                 case GameType.casino:
                     deck = new Deck("Casino");
-                    _numberOfCardsperHand = Constants.CASINO_HAND;
+                    _numberOfCardsperHand = CONSTANTS.CASINO_HAND;
                     break;
             }
 
